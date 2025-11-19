@@ -1024,26 +1024,66 @@ export const titleGenerationTemplate = (template: string, prompt: string): strin
 	return template;
 };
 
-export const approximateToHumanReadable = (nanoseconds: number) => {
-	const seconds = Math.floor((nanoseconds / 1e9) % 60);
-	const minutes = Math.floor((nanoseconds / 6e10) % 60);
-	const hours = Math.floor((nanoseconds / 3.6e12) % 24);
+function msToHumanReadable(ms: number) {
+	if (ms <= 0 || isNaN(ms)) return '0ms';
 
 	const results: string[] = [];
 
-	if (seconds >= 0) {
-		results.push(`${seconds}s`);
+	// seconds
+	const s = Math.floor(ms / 1000);
+	// minutes
+	const m = Math.floor(s / 60);
+	// hours
+	const h = Math.floor(m / 60);
+	// days
+	const d = Math.floor(h / 24);
+
+	const msLeft = Math.round(ms % 1000);
+	const sLeft = Math.round(s % 60);
+	const mLeft = Math.round(m % 60);
+	const hLeft = Math.round(h % 24);
+
+	if (d > 0) results.push(`${d}d`);
+	if (hLeft > 0) results.push(`${hLeft}h`);
+	if (mLeft > 0) results.push(`${mLeft}m`);
+	if (sLeft > 0) results.push(`${sLeft}s`);
+	if (msLeft > 0 && sLeft <= 0) results.push(`${msLeft}ms`);
+	if (results.length === 0) return '0ms';
+
+	return results.join(' ');
+}
+
+export const usageStatsToHumanReadable = (usage, enable) => {
+	if (enable === false) return usage;
+
+	const results = {};
+
+	if (!usage || typeof usage !== 'object') {
+		return results;
 	}
 
-	if (minutes > 0) {
-		results.push(`${minutes}m`);
+	for (const [k, v] of Object.entries(usage)) {
+		if (k.includes('_ms')) {
+			// llama.cpp
+			results[k] = msToHumanReadable(v);
+		} else if (k.includes('_duration')) {
+			// Ollama
+			results[k] = msToHumanReadable(v / 1e6);
+		} else {
+			results[k] = v;
+		}
 	}
 
-	if (hours > 0) {
-		results.push(`${hours}h`);
+	if (
+		typeof usage.prompt_ms === 'number' &&
+		!isNaN(usage.prompt_ms) &&
+		typeof usage.predicted_ms === 'number' &&
+		!isNaN(usage.predicted_ms)
+	) {
+		results['total_duration'] = msToHumanReadable(usage.prompt_ms + usage.predicted_ms);
 	}
 
-	return results.reverse().join(' ');
+	return results;
 };
 
 export const getTimeRange = (timestamp) => {
