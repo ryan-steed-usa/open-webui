@@ -1024,9 +1024,10 @@ export const titleGenerationTemplate = (template: string, prompt: string): strin
 	return template;
 };
 
-function msToHumanReadable(ms: number) {
-	if (ms <= 0 || isNaN(ms)) return '0ms';
+function msToHumanReadable(milliseconds: number) {
+	if (milliseconds <= 0 || isNaN(milliseconds)) return '0ms';
 
+	const ms = Math.round(milliseconds);
 	const results: string[] = [];
 
 	// seconds
@@ -1038,10 +1039,10 @@ function msToHumanReadable(ms: number) {
 	// days
 	const d = Math.floor(h / 24);
 
-	const msLeft = Math.round(ms % 1000);
-	const sLeft = Math.round(s % 60);
-	const mLeft = Math.round(m % 60);
-	const hLeft = Math.round(h % 24);
+	const msLeft = ms % 1000;
+	const sLeft = s % 60;
+	const mLeft = m % 60;
+	const hLeft = h % 24;
 
 	if (d > 0) results.push(`${d}d`);
 	if (hLeft > 0) results.push(`${hLeft}h`);
@@ -1066,6 +1067,8 @@ export const usageStatsToHumanReadable = (usage, enable) => {
 		if (k.includes('_ms')) {
 			// llama.cpp
 			results[k] = msToHumanReadable(v);
+		} else if (k.includes('per_second')) {
+			results[k] = v.toFixed(2);
 		} else if (k.includes('_duration')) {
 			// Ollama
 			results[k] = msToHumanReadable(v / 1e6);
