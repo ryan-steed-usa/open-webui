@@ -3,8 +3,8 @@ name: Create and publish Non-Root Docker images with specific build args
 on:
   workflow_dispatch:
   push:
-    branches:
-      - main-release
+    tags:
+      - 'v*-rsu'
 
 env:
   REGISTRY: ghcr.io
@@ -195,7 +195,7 @@ jobs:
           build-args: |
             BUILD_HASH=${{ github.sha }}
             USE_CUDA=true
-            UID=897                                    
+            UID=897
             GID=897
 
       - name: Export digest
@@ -299,7 +299,7 @@ jobs:
             BUILD_HASH=${{ github.sha }}
             USE_CUDA=true
             USE_CUDA_VER=cu126
-            UID=897                                    
+            UID=897
             GID=897
 
       - name: Export digest
@@ -402,7 +402,7 @@ jobs:
           build-args: |
             BUILD_HASH=${{ github.sha }}
             USE_OLLAMA=true
-            UID=897                                    
+            UID=897
             GID=897
 
       - name: Export digest
@@ -505,7 +505,7 @@ jobs:
           build-args: |
             BUILD_HASH=${{ github.sha }}
             USE_SLIM=true
-            UID=897                                    
+            UID=897
             GID=897
 
       - name: Export digest
