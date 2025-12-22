@@ -67,7 +67,7 @@ jobs:
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
           flavor: |
-            latest=${{ github.ref == 'refs/heads/main' }}
+            latest=true
 
       - name: Extract metadata for Docker cache
         id: cache-meta
@@ -171,7 +171,7 @@ jobs:
             type=semver,pattern={{major}}.{{minor}}
             type=raw,enable=${{ github.ref == 'refs/heads/main' }},prefix=,suffix=,value=cuda
           flavor: |
-            latest=${{ github.ref == 'refs/heads/main' }}
+            latest=true
             suffix=-cuda,onlatest=true
 
       - name: Extract metadata for Docker cache
@@ -277,7 +277,7 @@ jobs:
             type=semver,pattern={{major}}.{{minor}}
             type=raw,enable=${{ github.ref == 'refs/heads/main' }},prefix=,suffix=,value=cuda126
           flavor: |
-            latest=${{ github.ref == 'refs/heads/main' }}
+            latest=true
             suffix=-cuda126,onlatest=true
 
       - name: Extract metadata for Docker cache
@@ -381,7 +381,7 @@ jobs:
             type=semver,pattern={{major}}.{{minor}}
             type=raw,enable=${{ github.ref == 'refs/heads/main' }},prefix=,suffix=,value=ollama
           flavor: |
-            latest=${{ github.ref == 'refs/heads/main' }}
+            latest=true
             suffix=-ollama,onlatest=true
 
       - name: Extract metadata for Docker cache
@@ -483,7 +483,7 @@ jobs:
             type=semver,pattern={{major}}.{{minor}}
             type=raw,enable=${{ github.ref == 'refs/heads/main' }},prefix=,suffix=,value=slim
           flavor: |
-            latest=${{ github.ref == 'refs/heads/main' }}
+            latest=true
             suffix=-slim,onlatest=true
 
       - name: Extract metadata for Docker cache
@@ -569,7 +569,7 @@ jobs:
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
           flavor: |
-            latest=${{ github.ref == 'refs/heads/main' }}
+            latest=true
 
       - name: Create manifest list and push
         working-directory: /tmp/digests
@@ -624,7 +624,7 @@ jobs:
             type=semver,pattern={{major}}.{{minor}}
             type=raw,enable=${{ github.ref == 'refs/heads/main' }},prefix=,suffix=,value=cuda
           flavor: |
-            latest=${{ github.ref == 'refs/heads/main' }}
+            latest=true
             suffix=-cuda,onlatest=true
 
       - name: Create manifest list and push
@@ -680,7 +680,7 @@ jobs:
             type=semver,pattern={{major}}.{{minor}}
             type=raw,enable=${{ github.ref == 'refs/heads/main' }},prefix=,suffix=,value=cuda126
           flavor: |
-            latest=${{ github.ref == 'refs/heads/main' }}
+            latest=true
             suffix=-cuda126,onlatest=true
 
       - name: Create manifest list and push
@@ -736,7 +736,7 @@ jobs:
             type=semver,pattern={{major}}.{{minor}}
             type=raw,enable=${{ github.ref == 'refs/heads/main' }},prefix=,suffix=,value=ollama
           flavor: |
-            latest=${{ github.ref == 'refs/heads/main' }}
+            latest=true
             suffix=-ollama,onlatest=true
 
       - name: Create manifest list and push
@@ -792,7 +792,7 @@ jobs:
             type=semver,pattern={{major}}.{{minor}}
             type=raw,enable=${{ github.ref == 'refs/heads/main' }},prefix=,suffix=,value=slim
           flavor: |
-            latest=${{ github.ref == 'refs/heads/main' }}
+            latest=true
             suffix=-slim,onlatest=true
 
       - name: Create manifest list and push
