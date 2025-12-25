@@ -1,4 +1,4 @@
-name: Create and publish Docker images with specific build args
+name: Create and publish Non-Root Docker images with specific build args
 
 on:
   workflow_dispatch:
@@ -35,7 +35,7 @@ jobs:
           echo "IMAGE_NAME=${IMAGE_NAME,,}" >>${GITHUB_ENV}
           echo "FULL_IMAGE_NAME=ghcr.io/${IMAGE_NAME,,}" >>${GITHUB_ENV}
         env:
-          IMAGE_NAME: '${{ github.repository }}'
+          IMAGE_NAME: '${{ github.repository }}-non-root'
 
       - name: Prepare
         run: |
@@ -97,6 +97,8 @@ jobs:
           cache-to: type=registry,ref=${{ steps.cache-meta.outputs.tags }},mode=max
           build-args: |
             BUILD_HASH=${{ github.sha }}
+            UID=897
+            GID=897
 
       - name: Export digest
         run: |
@@ -135,7 +137,7 @@ jobs:
           echo "IMAGE_NAME=${IMAGE_NAME,,}" >>${GITHUB_ENV}
           echo "FULL_IMAGE_NAME=ghcr.io/${IMAGE_NAME,,}" >>${GITHUB_ENV}
         env:
-          IMAGE_NAME: '${{ github.repository }}'
+          IMAGE_NAME: '${{ github.repository }}-non-root'
 
       - name: Prepare
         run: |
@@ -203,6 +205,8 @@ jobs:
           build-args: |
             BUILD_HASH=${{ github.sha }}
             USE_CUDA=true
+            UID=897
+            GID=897
 
       - name: Export digest
         run: |
@@ -241,7 +245,7 @@ jobs:
           echo "IMAGE_NAME=${IMAGE_NAME,,}" >>${GITHUB_ENV}
           echo "FULL_IMAGE_NAME=ghcr.io/${IMAGE_NAME,,}" >>${GITHUB_ENV}
         env:
-          IMAGE_NAME: '${{ github.repository }}'
+          IMAGE_NAME: '${{ github.repository }}-non-root'
 
       - name: Prepare
         run: |
@@ -310,6 +314,8 @@ jobs:
             BUILD_HASH=${{ github.sha }}
             USE_CUDA=true
             USE_CUDA_VER=cu126
+            UID=897
+            GID=897
 
       - name: Export digest
         run: |
@@ -348,7 +354,7 @@ jobs:
           echo "IMAGE_NAME=${IMAGE_NAME,,}" >>${GITHUB_ENV}
           echo "FULL_IMAGE_NAME=ghcr.io/${IMAGE_NAME,,}" >>${GITHUB_ENV}
         env:
-          IMAGE_NAME: '${{ github.repository }}'
+          IMAGE_NAME: '${{ github.repository }}-non-root'
 
       - name: Prepare
         run: |
@@ -413,6 +419,8 @@ jobs:
           build-args: |
             BUILD_HASH=${{ github.sha }}
             USE_OLLAMA=true
+            UID=897
+            GID=897
 
       - name: Export digest
         run: |
@@ -450,7 +458,7 @@ jobs:
           echo "IMAGE_NAME=${IMAGE_NAME,,}" >>${GITHUB_ENV}
           echo "FULL_IMAGE_NAME=ghcr.io/${IMAGE_NAME,,}" >>${GITHUB_ENV}
         env:
-          IMAGE_NAME: '${{ github.repository }}'
+          IMAGE_NAME: '${{ github.repository }}-non-root'
 
       - name: Prepare
         run: |
@@ -515,6 +523,8 @@ jobs:
           build-args: |
             BUILD_HASH=${{ github.sha }}
             USE_SLIM=true
+            UID=897
+            GID=897
 
       - name: Export digest
         run: |
@@ -541,7 +551,7 @@ jobs:
           echo "IMAGE_NAME=${IMAGE_NAME,,}" >>${GITHUB_ENV}
           echo "FULL_IMAGE_NAME=ghcr.io/${IMAGE_NAME,,}" >>${GITHUB_ENV}
         env:
-          IMAGE_NAME: '${{ github.repository }}'
+          IMAGE_NAME: '${{ github.repository }}-non-root'
 
       - name: Download digests
         uses: actions/download-artifact@v5
@@ -595,7 +605,7 @@ jobs:
           echo "IMAGE_NAME=${IMAGE_NAME,,}" >>${GITHUB_ENV}
           echo "FULL_IMAGE_NAME=ghcr.io/${IMAGE_NAME,,}" >>${GITHUB_ENV}
         env:
-          IMAGE_NAME: '${{ github.repository }}'
+          IMAGE_NAME: '${{ github.repository }}-non-root'
 
       - name: Download digests
         uses: actions/download-artifact@v5
@@ -651,7 +661,7 @@ jobs:
           echo "IMAGE_NAME=${IMAGE_NAME,,}" >>${GITHUB_ENV}
           echo "FULL_IMAGE_NAME=ghcr.io/${IMAGE_NAME,,}" >>${GITHUB_ENV}
         env:
-          IMAGE_NAME: '${{ github.repository }}'
+          IMAGE_NAME: '${{ github.repository }}-non-root'
 
       - name: Download digests
         uses: actions/download-artifact@v5
@@ -707,7 +717,7 @@ jobs:
           echo "IMAGE_NAME=${IMAGE_NAME,,}" >>${GITHUB_ENV}
           echo "FULL_IMAGE_NAME=ghcr.io/${IMAGE_NAME,,}" >>${GITHUB_ENV}
         env:
-          IMAGE_NAME: '${{ github.repository }}'
+          IMAGE_NAME: '${{ github.repository }}-non-root'
 
       - name: Download digests
         uses: actions/download-artifact@v5
@@ -763,7 +773,7 @@ jobs:
           echo "IMAGE_NAME=${IMAGE_NAME,,}" >>${GITHUB_ENV}
           echo "FULL_IMAGE_NAME=ghcr.io/${IMAGE_NAME,,}" >>${GITHUB_ENV}
         env:
-          IMAGE_NAME: '${{ github.repository }}'
+          IMAGE_NAME: '${{ github.repository }}-non-root'
 
       - name: Download digests
         uses: actions/download-artifact@v5
