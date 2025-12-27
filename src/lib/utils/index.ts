@@ -1024,26 +1024,68 @@ export const titleGenerationTemplate = (template: string, prompt: string): strin
 	return template;
 };
 
-export const approximateToHumanReadable = (nanoseconds: number) => {
-	const seconds = Math.floor((nanoseconds / 1e9) % 60);
-	const minutes = Math.floor((nanoseconds / 6e10) % 60);
-	const hours = Math.floor((nanoseconds / 3.6e12) % 24);
+function msToHumanReadable(milliseconds: number): string {
+	if (isNaN(milliseconds)) return '0ms';
+	if (milliseconds < 1) return `${milliseconds.toFixed(2)}ms`;
+
+	const roundedMs = Math.round(milliseconds);
+	if (roundedMs === 0) return '0ms';
 
 	const results: string[] = [];
 
-	if (seconds >= 0) {
-		results.push(`${seconds}s`);
+	const totalSeconds = Math.floor(roundedMs / 1000);
+	const totalMinutes = Math.floor(totalSeconds / 60);
+	const totalHours = Math.floor(totalMinutes / 60);
+	const totalDays = Math.floor(totalHours / 24);
+
+	const remainingMs = roundedMs % 1000;
+	const remainingSeconds = totalSeconds % 60;
+	const remainingMinutes = totalMinutes % 60;
+	const remainingHours = totalHours % 24;
+
+	if (totalDays > 0) results.push(`${totalDays}d`);
+	if (remainingHours > 0) results.push(`${remainingHours}h`);
+	if (remainingMinutes > 0) results.push(`${remainingMinutes}m`);
+	if (remainingSeconds > 0) results.push(`${remainingSeconds}s`);
+	if (remainingMs > 0) results.push(`${remainingMs}ms`);
+
+	return results.join(' ');
+}
+
+export const usageStatsToHumanReadable = (
+	usage: Record<string, any> | null | undefined
+): Record<string, any> => {
+	if (!usage || typeof usage !== 'object') return usage ?? {};
+
+	const results: Record<string, any> = {};
+
+	const backendHandlers = [
+		{ suffix: '_ms', convert: (v) => msToHumanReadable(v) }, // Llama.cpp
+		{ suffix: 'per_second', convert: (v) => v.toFixed(2) },
+		{ suffix: '_duration', convert: (v) => msToHumanReadable(v / 1e6) } // Ollama
+	];
+
+	for (const [k, v] of Object.entries(usage)) {
+		if (typeof v !== 'number') {
+			results[k] = v;
+			continue;
+		}
+		const handler = backendHandlers.find((h) => k.endsWith(h.suffix));
+		results[k] = handler ? handler.convert(v) : v;
 	}
 
-	if (minutes > 0) {
-		results.push(`${minutes}m`);
+	if (
+		typeof usage.prompt_ms === 'number' &&
+		!isNaN(usage.prompt_ms) &&
+		usage.prompt_ms >= 0 &&
+		typeof usage.predicted_ms === 'number' &&
+		!isNaN(usage.predicted_ms) &&
+		usage.predicted_ms >= 0
+	) {
+		results.total_duration = msToHumanReadable(usage.prompt_ms + usage.predicted_ms);
 	}
 
-	if (hours > 0) {
-		results.push(`${hours}h`);
-	}
-
-	return results.reverse().join(' ');
+	return results;
 };
 
 export const getTimeRange = (timestamp) => {
