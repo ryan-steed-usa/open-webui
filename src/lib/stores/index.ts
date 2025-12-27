@@ -237,6 +237,7 @@ type Settings = {
 	pinnedMenuItems?: string[];
 	pinnedNotesOrder?: string[];
 
+	showFriendlyGenerationStats?: boolean;
 	system?: string;
 	seed?: number;
 	temperature?: string;
