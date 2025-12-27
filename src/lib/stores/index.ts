@@ -233,6 +233,7 @@ type Settings = {
 	recentEmojis?: string[];
 	pinnedMenuItems?: string[];
 
+	showFriendlyGenerationStats?: boolean;
 	system?: string;
 	seed?: number;
 	temperature?: string;
