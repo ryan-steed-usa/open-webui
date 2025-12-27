@@ -214,6 +214,7 @@ type Settings = {
 	chatDirection?: 'LTR' | 'RTL' | 'auto';
 	ctrlEnterToSend?: boolean;
 	renderMarkdownInPreviews?: boolean;
+	showFriendlyGenerationStats?: boolean;
 
 	system?: string;
 	seed?: number;
