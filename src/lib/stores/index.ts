@@ -203,6 +203,7 @@ type Settings = {
 	splitLargeDeltas?: boolean;
 	chatDirection?: 'LTR' | 'RTL' | 'auto';
 	ctrlEnterToSend?: boolean;
+	showFriendlyGenerationStats?: boolean;
 
 	system?: string;
 	seed?: number;
