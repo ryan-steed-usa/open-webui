@@ -113,7 +113,6 @@ jobs:
           retention-days: 1
 
   build-cuda-image:
-    if: false
     runs-on: ${{ matrix.runner }}
     permissions:
       contents: read
@@ -219,7 +218,6 @@ jobs:
           retention-days: 1
 
   build-cuda126-image:
-    if: false
     runs-on: ${{ matrix.runner }}
     permissions:
       contents: read
@@ -326,7 +324,6 @@ jobs:
           retention-days: 1
 
   build-ollama-image:
-    if: false
     runs-on: ${{ matrix.runner }}
     permissions:
       contents: read

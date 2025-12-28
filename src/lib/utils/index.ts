@@ -1025,9 +1025,11 @@ export const titleGenerationTemplate = (template: string, prompt: string): strin
 };
 
 function msToHumanReadable(milliseconds: number): string {
-	if (milliseconds <= 0 || isNaN(milliseconds)) return '0ms';
+	if (isNaN(milliseconds)) return '0ms';
 
 	const roundedMs = Math.round(milliseconds);
+	if (roundedMs === 0) return '0ms';
+
 	const results: string[] = [];
 
 	const totalSeconds = Math.floor(roundedMs / 1000);
