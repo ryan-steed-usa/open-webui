@@ -1164,9 +1164,9 @@
 										content={message.usage
 											? `<pre>${sanitizeResponseContent(
 													JSON.stringify(
-														$settings?.showFriendlyGenerationStats ? usageStatsToHumanReadable(
-															message.usage
-														) : message.usage,
+														$settings?.showFriendlyGenerationStats
+															? usageStatsToHumanReadable(message.usage)
+															: message.usage,
 														null,
 														2
 													)
