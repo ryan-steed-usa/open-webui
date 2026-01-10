@@ -74,6 +74,8 @@
 	let showFloatingActionButtons = true;
 	let floatingActionButtons = null;
 
+	let showFriendlyGenerationStats = false;
+
 	let imageCompression = false;
 	let imageCompressionSize = {
 		width: '',
@@ -255,6 +257,8 @@
 
 		showFloatingActionButtons = $settings?.showFloatingActionButtons ?? true;
 		floatingActionButtons = $settings?.floatingActionButtons ?? null;
+
+		showFriendlyGenerationStats = $settings?.showFriendlyGenerationStats ?? false;
 
 		imageCompression = $settings?.imageCompression ?? false;
 		imageCompressionSize = $settings?.imageCompressionSize ?? { width: '', height: '' };
@@ -1050,6 +1054,25 @@
 							>{webSearch === 'always' ? $i18n.t('Always') : $i18n.t('Default')}</span
 						>
 					</button>
+				</div>
+			</div>
+
+			<div>
+				<div class=" py-0.5 flex w-full justify-between">
+					<div id="show-friendly-generation-stats-label" class=" self-center text-xs">
+						{$i18n.t('Show Friendly Generation Stats')}
+					</div>
+
+					<div class="flex items-center gap-2 p-1">
+						<Switch
+							ariaLabelledbyId="show-friendly-info-label"
+							tooltip={true}
+							bind:state={showFriendlyGenerationStats}
+							on:change={() => {
+								saveSettings({ showFriendlyGenerationStats });
+							}}
+						/>
+					</div>
 				</div>
 			</div>
 

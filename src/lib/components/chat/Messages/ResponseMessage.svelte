@@ -28,7 +28,7 @@
 	import { imageGenerations } from '$lib/apis/images';
 	import {
 		copyToClipboard as _copyToClipboard,
-		approximateToHumanReadable,
+		usageStatsToHumanReadable,
 		getMessageContentParts,
 		sanitizeResponseContent,
 		createMessagesList,
@@ -1080,8 +1080,14 @@
 									<Tooltip
 										content={message.usage
 											? `<pre>${sanitizeResponseContent(
-													JSON.stringify(message.usage, null, 2)
-														.replace(/"([^(")"]+)":/g, '$1:')
+													JSON.stringify(
+														$settings?.showFriendlyGenerationStats
+															? usageStatsToHumanReadable(message.usage)
+															: message.usage,
+														null,
+														2
+													)
+														.replace(/"([^(")"]+)"/g, '$1')
 														.slice(1, -1)
 														.split('\n')
 														.map((line) => line.slice(2))
