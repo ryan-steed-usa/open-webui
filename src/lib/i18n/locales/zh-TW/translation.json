@@ -1642,6 +1642,7 @@
 	"Show all ({{COUNT}} characters)": "顯示全部（共 {{COUNT}} 個字元）",
 	"Show Files": "顯示檔案",
 	"Show Formatting Toolbar": "顯示文字格式工具列",
+	"Show Friendly Generation Stats": "",
 	"Show image preview": "顯示圖片預覽",
 	"Show Model": "顯示模型",
 	"Show Shortcuts": "顯示快捷鍵",

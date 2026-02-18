@@ -5,10 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.8.3] - 2026-02-17
+## [0.8.3-rsu1] - 2026-02-17
 
 ### Added
 
+- 📋 View generation statistics in a more user-friendly format. Adds a new setting "Show Friendly Generation Stats" in the chat interface settings panel. The feature is disabled by default and can be toggled in the chat settings interface. When enabled, users will see formatted time values (e.g., "2s 500ms" instead of "2500") in generation statistics.
 - ✏️ **Model edit shortcut.** Users can now edit models directly from the model selector dropdown menu, making it faster to modify model settings without navigating to separate admin or workspace pages. [Commit](https://github.com/open-webui/open-webui/commit/519ff40cb69cdc1d215cee369e9db70ff7438153)
 - 🎨 **Image edit API background support.** The image edit API now supports the background parameter for OpenAI's gpt-image-1 model, enabling background transparency control ("transparent", "opaque", "auto") when the feature is exposed in the UI. [#21459](https://github.com/open-webui/open-webui/pull/21459)
 - ⚡ **Faster model filtering.** Model access control filtering no longer makes a redundant database query to re-fetch model info that is already available in memory, reducing latency when loading model lists for non-admin users. [Commit](https://github.com/open-webui/open-webui/commit/34cd3d79e8688f589e3dd2f03415f8a8f9a13115)
