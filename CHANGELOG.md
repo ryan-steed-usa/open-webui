@@ -5,10 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.8.5] - 2026-02-23
+## [0.8.5-rsu1] - 2026-02-23
 
 ### Added
 
+- 📋 View generation statistics in a more user-friendly format. Adds a new setting "Show Friendly Generation Stats" in the chat interface settings panel. The feature is disabled by default and can be toggled in the chat settings interface. When enabled, users will see formatted time values (e.g., "2s 500ms" instead of "2500") in generation statistics.
 - ⌨️ **Voice dictation shortcut.** Users can now toggle voice dictation using Cmd+Shift+L (or Ctrl+Shift+L on Windows/Linux), making it faster to start and stop dictation without clicking the microphone button.
 
 ### Fixed
