@@ -5,10 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.8.9] - 2026-03-07
+## [0.8.9-rsu1] - 2026-03-07
 
 ### Added
 
+- 📋 **Improved generation stats.** View generation statistics in a more user-friendly format. Adds a new setting "Show Friendly Generation Stats" in the chat interface settings panel. The feature is disabled by default and can be toggled in the chat settings interface. When enabled, users will see formatted time values (e.g., "2s 500ms" instead of "2500") in generation statistics.
 - ▶️ **Open Terminal notebook cell execution.** Users can now run Jupyter Notebook code cells directly in the Open Terminal file navigator, execute entire notebooks with a single click, edit and modify cells before running, and control the kernel - bringing full interactive notebook execution to the browser. [Commit](https://github.com/open-webui/open-webui/commit/4b3ed3e802d6f2ec8ee7caf358af810b7d09f789)
 - 🗃️ **Open Terminal SQLite browser.** Users can now browse SQLite database files directly in the Open Terminal file navigator, viewing tables and running queries without downloading them first. [Commit](https://github.com/open-webui/open-webui/commit/a181b4a731a9ec7856be08d0b045a454d1341cf4)
 - 📉 **Open Terminal Mermaid diagram rendering.** Markdown files with Mermaid code blocks are now rendered as diagrams directly in the Open Terminal file navigator, making it easier to visualize flowcharts and other diagrams. [Commit](https://github.com/open-webui/open-webui/commit/aaa49bdd6d6e5c10e8be554039d3cac673008fc2)
