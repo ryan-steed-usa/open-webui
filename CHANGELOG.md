@@ -5,10 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.8.10] - 2026-03-08
+## [0.8.10-rsu1] - 2026-03-08
 
 ### Added
 
+- 📋 **Improved generation stats.** View generation statistics in a more user-friendly format. Adds a new setting "Show Friendly Generation Stats" in the chat interface settings panel. The feature is disabled by default and can be toggled in the chat settings interface. When enabled, users will see formatted time values (e.g., "2s 500ms" instead of "2500") in generation statistics.
 - 🔐 **Custom OIDC logout endpoint.** Administrators can now configure a custom OpenID Connect logout URL via OPENID_END_SESSION_ENDPOINT, enabling logout functionality for OIDC providers that require custom endpoints like AWS Cognito. [Commit](https://github.com/open-webui/open-webui/commit/3f350f865920daf2844769a758b2d2e6a7ee3efa)
 - 🗄️ **MariaDB Vector community support.** Added MariaDB Vector as a new vector database backend, enabling deployments with VECTOR_DB=mariadb-vector; supports cosine and euclidean distance strategies with configurable HNSW indexing. [#21931](https://github.com/open-webui/open-webui/pull/21931)
 - 📝 **Task message truncation.** Chat messages sent to task models for title and tag generation can now be truncated using a filter in the prompt template, reducing token usage and processing time for long conversations. [#21499](https://github.com/open-webui/open-webui/issues/21499)
