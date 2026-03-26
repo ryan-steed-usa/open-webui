@@ -5,10 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.8.11] - 2026-03-25
+## [0.8.11-rsu1] - 2026-03-25
 
 ### Added
 
+- 📋 **Improved generation stats.** View generation statistics in a more user-friendly format. Adds a new setting "Show Friendly Generation Stats" in the chat interface settings panel. The feature is disabled by default and can be toggled in the chat settings interface. When enabled, users will see formatted time values (e.g., "2s 500ms" instead of "2500") in generation statistics.
 - 🔀 **Responses API streaming improvements.** The OpenAI proxy now properly handles tool call streaming and re-invocations in the Responses API, preventing duplicate tool calls and preserving output during model re-invocations. [Commit](https://github.com/open-webui/open-webui/commit/93415a48e8893139db13d02d0a6d24e8604a2ac5), [Commit](https://github.com/open-webui/open-webui/commit/f8b3a32caf00dad76687fd8fe698b86f304f3997), [Commit](https://github.com/open-webui/open-webui/commit/2ae47cf20057e92a83fd618b938f3ee9bb124e5b), [Commit](https://github.com/open-webui/open-webui/commit/adcbba34f8bbfbab3e4041269a084f2b71c076d9)
 - 🔀 **Responses API stateful sessions.** Administrators can now enable experimental stateful session support via the ENABLE_RESPONSES_API_STATEFUL environment variable, allowing compatible backends to store responses server-side with previous_response_id anchoring for improved multi-turn conversations. [Commit](https://github.com/open-webui/open-webui/commit/dfc2dc2c0bd298cb4bfcf212ef11223586aa54f1)
 - 📄 **File viewing pagination.** The view_file and view_knowledge_file tools now support pagination with offset and max_chars parameters, allowing models to read large files in chunks. [Commit](https://github.com/open-webui/open-webui/commit/5d7766e1b6f7ca7749c5a5a780d7b1bb2da28a2f)
