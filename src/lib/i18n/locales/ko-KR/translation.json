@@ -1859,6 +1859,7 @@
 	"Show all ({{COUNT}} characters)": "모든 ({{COUNT}} 문자) 보기",
 	"Show Files": "파일 보기",
 	"Show Formatting Toolbar": "서식 툴바 표시",
+	"Show Friendly Generation Stats": "",
 	"Show image preview": "이미지 미리보기",
 	"Show Model": "모델 보기",
 	"Show Shortcuts": "단축키 보기",

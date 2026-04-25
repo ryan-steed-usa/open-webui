@@ -5,10 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.9.2] - 2026-04-24
+## [0.9.2-rsu1] - 2026-04-24
 
 ### Added
 
+- 📋 **Improved generation stats.** View generation statistics in a more user-friendly format. Adds a new setting "Show Friendly Generation Stats" in the chat interface settings panel. The feature is disabled by default and can be toggled in the chat settings interface. When enabled, users will see formatted time values (e.g., "2s 500ms" instead of "2500") in generation statistics.
 - 🧠 **PaddleOCR-vl document extraction.** Administrators can now use PaddleOCR-vl as a content extraction engine for document processing, with configurable API URL and token settings in document retrieval configuration. [#23945](https://github.com/open-webui/open-webui/pull/23945)
 - 🔥 **Firecrawl v2 API.** Firecrawl web loading now uses the v2 API directly with proper retry logic, exponential backoff on rate limits, and configurable timeout handling, improving reliability for both cloud and self-hosted Firecrawl setups. [#23934](https://github.com/open-webui/open-webui/pull/23934)
 - ⏰ **Calendar event reminder customization.** Calendar events now support a configurable `reminder_minutes` parameter, allowing models to set custom reminder durations instead of the default 10-minute notification.
