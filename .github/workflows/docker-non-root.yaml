@@ -10,7 +10,7 @@ on:
       - 'v*-rsu*'
 
 concurrency:
-  group: docker-${{ github.ref }}
+  group: docker-non-root-${{ github.ref }}
   cancel-in-progress: true
 
 env:
