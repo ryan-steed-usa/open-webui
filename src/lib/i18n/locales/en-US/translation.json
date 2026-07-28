@@ -3883,6 +3883,8 @@
 	"settings.personal.interface.showFilesOnTerminalSelect.label": "Show Files on Terminal Select",
 	"settings.personal.interface.showFormattingToolbar.description": "Show formatting controls in the rich text composer.",
 	"settings.personal.interface.showFormattingToolbar.label": "Show Formatting Toolbar",
+	"settings.personal.interface.showFriendlyGenerationStats.description": "Convert conversation generation statistics into a human-friendly format.",
+	"settings.personal.interface.showFriendlyGenerationStats.label": "Friendly Generation Statistics",
 	"settings.personal.interface.showInputSelections.description": "Show selected tools, skills, filters, and capabilities beside the + menu. Hiding them preserves your selections.",
 	"settings.personal.interface.showInputSelections.label": "Show Input Selections",
 	"settings.personal.interface.stylizedPdfExport.description": "Use styled formatting when exporting chats to PDF.",
