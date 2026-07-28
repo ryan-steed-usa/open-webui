@@ -397,6 +397,7 @@ type Settings = {
 
 	defaultUploadContext?: 'full' | 'focused';
 
+	showFriendlyGenerationStats?: boolean;
 	system?: string;
 	seed?: number;
 	temperature?: string;
