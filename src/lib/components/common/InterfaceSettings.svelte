@@ -94,6 +94,8 @@
 	let showFloatingActionButtons = true;
 	let floatingActionButtons: any = null;
 
+	let showFriendlyGenerationStats = false;
+
 	let imageCompression = false;
 	let imageCompressionSize: any = {
 		width: '',
@@ -395,6 +397,8 @@
 
 		showFloatingActionButtons = currentSettings?.showFloatingActionButtons ?? true;
 		floatingActionButtons = currentSettings?.floatingActionButtons ?? null;
+
+		showFriendlyGenerationStats = currentSettings?.showFriendlyGenerationStats ?? false;
 
 		imageCompression = currentSettings?.imageCompression ?? false;
 		imageCompressionSize = currentSettings?.imageCompressionSize ?? { width: '', height: '' };
@@ -1670,6 +1674,28 @@
 			</p>
 		</div>
 	{/if}
+
+	<div>
+		<div class={settingRowClass}>
+			<div id="show-friendly-generation-stats-label" class={settingLabelClass}>
+				{$i18n.t('settings.personal.interface.showFriendlyGenerationStats.label')}
+			</div>
+
+			<div class={settingControlClass}>
+				<Switch
+					ariaLabelledbyId="show-friendly-info-label"
+					tooltip={true}
+					bind:state={showFriendlyGenerationStats}
+					on:change={() => {
+						saveSettings({ showFriendlyGenerationStats });
+					}}
+				/>
+			</div>
+		</div>
+		<p class={settingDescriptionClass}>
+			{$i18n.t('settings.personal.interface.showFriendlyGenerationStats.description')}
+		</p>
+	</div>
 
 	<div class={sectionHeadingClass}>
 		{$i18n.t('settings.personal.interface.sections.input.title')}

@@ -25,7 +25,7 @@
 	import { imageGenerations } from '$lib/apis/images';
 	import {
 		copyToClipboard as _copyToClipboard,
-		approximateToHumanReadable,
+		usageStatsToHumanReadable,
 		getMessageContentParts,
 		sanitizeResponseContent,
 		createMessagesList,
@@ -1241,7 +1241,13 @@
 								{/if}
 
 								{#if Object.keys(message.usage ?? {}).some((key) => key !== 'incomplete') && $visibleControls['chat.usage']}
-									{@const usage = JSON.stringify(message.usage, null, 2)
+									{@const usage = JSON.stringify(
+										$settings?.showFriendlyGenerationStats
+											? usageStatsToHumanReadable(message.usage)
+											: message.usage,
+										null,
+										2
+									)
 										.replace(/"([^(")"]+)":/g, '$1:')
 										.slice(1, -1)
 										.split('\n')
