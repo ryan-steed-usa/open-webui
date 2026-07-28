@@ -2970,6 +2970,8 @@
 	"settings.personal.interface.showFilesOnTerminalSelect.label": "Show Files on Terminal Select",
 	"settings.personal.interface.showFormattingToolbar.description": "Show formatting controls in the rich text composer.",
 	"settings.personal.interface.showFormattingToolbar.label": "Show Formatting Toolbar",
+	"settings.personal.interface.showFriendlyGenerationStats.description": "Convert conversation generation statistics into a human-friendly format.",
+	"settings.personal.interface.showFriendlyGenerationStats.label": "Friendly Generation Statistics",
 	"settings.personal.interface.stylizedPdfExport.description": "Use styled formatting when exporting chats to PDF.",
 	"settings.personal.interface.stylizedPdfExport.label": "Stylized PDF Export",
 	"settings.personal.interface.temporaryChatByDefault.description": "Start new chats as temporary unless changed.",
