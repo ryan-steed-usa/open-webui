@@ -325,9 +325,8 @@ type Settings = {
 	recentEmojis?: string[];
 	pinnedMenuItems?: string[];
 	pinnedNotesOrder?: string[];
-
 	defaultUploadContext?: 'full' | 'focused';
-
+	showFriendlyGenerationStats?: boolean;
 	system?: string;
 	seed?: number;
 	temperature?: string;
