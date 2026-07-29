@@ -1266,7 +1266,7 @@
 			<div>
 				<div class={settingRowClass}>
 					<div id="show-friendly-generation-stats-label" class={settingLabelClass}>
-						{$i18n.t('Show Friendly Generation Stats')}
+						{$i18n.t('Friendly Generation Statistics')}
 					</div>
 
 					<div class={settingControlClass}>
@@ -1280,6 +1280,9 @@
 						/>
 					</div>
 				</div>
+				<p class={settingDescriptionClass}>
+					{$i18n.t('Convert conversation generation statistics into a human-friendly format.')}
+				</p>
 			</div>
 
 			<div class={sectionHeadingClass}>{$i18n.t('Input')}</div>
