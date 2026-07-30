@@ -75,6 +75,8 @@ jobs:
 
   trigger_non_root:
     needs: publish
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
     permissions:
       actions: write
     steps:
