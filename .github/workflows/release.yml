@@ -73,6 +73,11 @@ jobs:
               ref: 'v${{ steps.pkg.outputs.version }}',
             })
 
+  trigger_non_root:
+    needs: publish
+    permissions:
+      actions: write
+    steps:
       - name: Trigger Docker Non-Root build
         uses: actions/github-script@v8
         with:
@@ -81,5 +86,5 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               workflow_id: 'docker-non-root.yaml',
-              ref: 'v${{ steps.pkg.outputs.version }}',
+              ref: 'v${{ needs.publish.outputs.version }}',
             })
