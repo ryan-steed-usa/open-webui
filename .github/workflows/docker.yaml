@@ -2,12 +2,6 @@ name: Create and publish Docker images with specific build args
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-      - dev
-    tags:
-      - 'v*-rsu*'
 
 concurrency:
   group: docker-${{ github.ref }}
@@ -52,6 +46,41 @@ jobs:
           - name: slim
             suffix: "-slim"
             build_args: "USE_SLIM=true"
+            free_disk: false
+          - name: main_non_root
+            suffix: "-non-root"
+            build_args: |
+              UID=897
+              GID=897
+            free_disk: false
+          - name: cuda_non_root
+            suffix: "-cuda-non-root"
+            build_args: |
+              USE_CUDA=true
+              UID=897
+              GID=897
+            free_disk: true
+          - name: cuda126_non_root
+            suffix: "-cuda126-non-root"
+            build_args: |
+              USE_CUDA=true
+              USE_CUDA_VER=cu126
+              UID=897
+              GID=897
+            free_disk: true
+          - name: ollama_non_root
+            suffix: "-ollama-non-root"
+            build_args: |
+              USE_OLLAMA=true
+              UID=897
+              GID=897
+            free_disk: false
+          - name: slim_non_root
+            suffix: "-slim-non-root"
+            build_args: |
+              USE_SLIM=true
+              UID=897
+              GID=897
             free_disk: false
 
     steps:
@@ -173,6 +202,16 @@ jobs:
             suffix: "-ollama"
           - name: slim
             suffix: "-slim"
+          - name: main_non_root
+            suffix: "-non-root"
+          - name: cuda_non_root
+            suffix: "-cuda-non-root"
+          - name: cuda126_non_root
+            suffix: "-cuda126-non-root"
+          - name: ollama_non_root
+            suffix: "-ollama-non-root"
+          - name: slim_non_root
+            suffix: "-slim-non-root"
 
     steps:
       - name: Prepare environment
@@ -326,6 +365,16 @@ jobs:
             suffix: "-ollama"
           - variant: slim
             suffix: "-slim"
+          - name: main_non_root
+            suffix: "-non-root"
+          - name: cuda_non_root
+            suffix: "-cuda-non-root"
+          - name: cuda126_non_root
+            suffix: "-cuda126-non-root"
+          - name: ollama_non_root
+            suffix: "-ollama-non-root"
+          - name: slim_non_root
+            suffix: "-slim-non-root"
 
     steps:
       - name: Prepare environment

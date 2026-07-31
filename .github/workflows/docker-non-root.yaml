@@ -2,12 +2,6 @@ name: Create and publish Non-Root Docker images with specific build args
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-      - dev
-    tags:
-      - 'v*-rsu*'
 
 concurrency:
   group: docker-${{ github.ref }}
