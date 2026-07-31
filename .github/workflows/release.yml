@@ -17,8 +17,6 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    outputs:
-      version: ${{ steps.pkg.outputs.version }}
     permissions:
       contents: write
       actions: write
@@ -73,22 +71,4 @@ jobs:
               repo: context.repo.repo,
               workflow_id: 'docker.yaml',
               ref: 'v${{ steps.pkg.outputs.version }}',
-            })
-
-  trigger_non_root:
-    needs: publish
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    permissions:
-      actions: write
-    steps:
-      - name: Trigger Docker Non-Root build
-        uses: actions/github-script@v8
-        with:
-          script: |
-            github.rest.actions.createWorkflowDispatch({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              workflow_id: 'docker-non-root.yaml',
-              ref: 'v${{ needs.publish.outputs.version }}',
             })
