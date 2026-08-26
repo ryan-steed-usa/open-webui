@@ -1456,7 +1456,6 @@
 	"Include": "포함",
 	"Include saved memories in the system context.": "저장된 메모리를 시스템 컨텍스트에 포함합니다.",
 	"Include voices that are not provided by a local speech service.": "로컬 음성 서비스에서 제공하지 않는 음성도 포함합니다.",
-	"Increase contrast for controls and input surfaces.": "",
 	"Increase UI Scale": "UI 크기 증가",
 	"Influences how quickly the algorithm responds to feedback from the generated text. A lower learning rate will result in slower adjustments, while a higher learning rate will make the algorithm more responsive.": "생성된 텍스트의 피드백에 알고리즘이 얼마나 빨리 반응하는지에 영향을 미칩니다. 학습률이 낮을수록 조정 속도가 느려지고 학습률이 높아지면 알고리즘의 반응 속도가 빨라집니다.",
 	"Info": "정보",

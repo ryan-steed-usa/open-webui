@@ -1485,7 +1485,6 @@
 	"Include": "Включать",
 	"Include saved memories in the system context.": "",
 	"Include voices that are not provided by a local speech service.": "",
-	"Increase contrast for controls and input surfaces.": "",
 	"Increase UI Scale": "Увеличить масштаб интерфейса",
 	"Influences how quickly the algorithm responds to feedback from the generated text. A lower learning rate will result in slower adjustments, while a higher learning rate will make the algorithm more responsive.": "Влияет на то, насколько быстро алгоритм реагирует на обратную связь из сгенерированного текста. Более низкая скорость обучения приведет к более медленной корректировке, в то время как более высокая скорость обучения сделает алгоритм более отзывчивым.",
 	"Info": "Информация",

@@ -1465,7 +1465,6 @@
 	"Include": "Sisällytä",
 	"Include saved memories in the system context.": "Sisällytä tallennetut muistot järjestelmän kontekstiin.",
 	"Include voices that are not provided by a local speech service.": "Sisällytä puheääniä, joita paikallinen puhesynteesipalvelu ei tarjoa.",
-	"Increase contrast for controls and input surfaces.": "",
 	"Increase UI Scale": "Kasvata käyttöliittymän kokoa",
 	"Influences how quickly the algorithm responds to feedback from the generated text. A lower learning rate will result in slower adjustments, while a higher learning rate will make the algorithm more responsive.": "Kuinka nopeasti algoritmi mukautuu generoidun tekstin palautteeseen. Alempi oppimisnopeus hidastaa mukautumista, kun taas nopeampi oppimisnopeus tekee algoritmistä reagoivamman.",
 	"Info": "Tiedot",

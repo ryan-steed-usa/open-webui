@@ -1465,7 +1465,6 @@
 	"Include": "Tak við",
 	"Include saved memories in the system context.": "Tak goymd minni við í skipanarsamanhanginum.",
 	"Include voices that are not provided by a local speech service.": "Tak røddir við, sum ikki koma frá einari lokalari talutænastu.",
-	"Increase contrast for controls and input surfaces.": "",
 	"Increase UI Scale": "Øk markamótsstøddina",
 	"Influences how quickly the algorithm responds to feedback from the generated text. A lower learning rate will result in slower adjustments, while a higher learning rate will make the algorithm more responsive.": "Ávirkar, hvussu skjótt algoritman svarar afturboðan frá framleidda tekstinum. Eitt lægri læringarstig gevur seinni tillagingar, meðan eitt hægri læringarstig ger algoritmuna skjótari at reagera.",
 	"Info": "Upplýsingar",

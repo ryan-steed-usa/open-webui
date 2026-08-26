@@ -1475,7 +1475,6 @@
 	"Include": "Incluir",
 	"Include saved memories in the system context.": "Inclua as memórias salvas no contexto do sistema.",
 	"Include voices that are not provided by a local speech service.": "Inclua vozes que não são fornecidas por um serviço de fala local.",
-	"Increase contrast for controls and input surfaces.": "",
 	"Increase UI Scale": "Aumentar a escala da interface do usuário",
 	"Influences how quickly the algorithm responds to feedback from the generated text. A lower learning rate will result in slower adjustments, while a higher learning rate will make the algorithm more responsive.": "Influencia a rapidez com que o algoritmo responde ao feedback do texto gerado. Uma taxa de aprendizado menor resultará em ajustes mais lentos, enquanto uma taxa de aprendizado maior tornará o algoritmo mais responsivo.",
 	"Info": "Informação",

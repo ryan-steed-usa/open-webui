@@ -1465,7 +1465,6 @@
 	"Include": "Inkludera",
 	"Include saved memories in the system context.": "",
 	"Include voices that are not provided by a local speech service.": "",
-	"Increase contrast for controls and input surfaces.": "",
 	"Increase UI Scale": "Öka skalan på användargränssnittet",
 	"Influences how quickly the algorithm responds to feedback from the generated text. A lower learning rate will result in slower adjustments, while a higher learning rate will make the algorithm more responsive.": "Påverkar hur snabbt algoritmen svarar på feedback från den genererade texten. En lägre inlärningshastighet resulterar i långsammare justeringar, medan en högre inlärningshastighet gör algoritmen mer responsiv.",
 	"Info": "Information",

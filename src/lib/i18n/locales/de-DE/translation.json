@@ -1465,7 +1465,6 @@
 	"Include": "Einschließen",
 	"Include saved memories in the system context.": "Bindet gespeicherte Erinnerungen in den Systemkontext ein.",
 	"Include voices that are not provided by a local speech service.": "Bezieht Stimmen ein, die nicht von einem lokalen Sprachdienst stammen.",
-	"Increase contrast for controls and input surfaces.": "",
 	"Increase UI Scale": "UI-Skalierung erhöhen",
 	"Influences how quickly the algorithm responds to feedback from the generated text. A lower learning rate will result in slower adjustments, while a higher learning rate will make the algorithm more responsive.": "Beeinflusst, wie schnell der Algorithmus auf Feedback aus dem generierten Text reagiert. Eine niedrigere Lernrate führt zu langsameren Anpassungen, während eine höhere Lernrate den Algorithmus reaktionsschneller macht.",
 	"Info": "Info",

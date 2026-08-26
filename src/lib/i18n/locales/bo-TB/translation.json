@@ -1455,7 +1455,6 @@
 	"Include": "ཚུད་པ།",
 	"Include saved memories in the system context.": "",
 	"Include voices that are not provided by a local speech service.": "",
-	"Increase contrast for controls and input surfaces.": "",
 	"Increase UI Scale": "",
 	"Influences how quickly the algorithm responds to feedback from the generated text. A lower learning rate will result in slower adjustments, while a higher learning rate will make the algorithm more responsive.": "བཟོས་པའི་ཡིག་རྐྱང་ནས་ཐོན་པའི་བསམ་འཆར་ལ་ཨང་རྩིས་ཀྱིས་ཇི་ཙམ་མགྱོགས་པོར་ལན་འདེབས་བྱེད་པར་ཤུགས་རྐྱེན་ཐེབས་པ། སྦྱོང་ཚད་དམའ་བས་ལེགས་སྒྲིག་དལ་བ་ཡོང་ངེས། དེ་བཞིན་དུ་སྦྱོང་ཚད་མཐོ་བས་ཨང་རྩིས་དེ་ལན་འདེབས་ཆེ་བ་བཟོ་ངེས།",
 	"Info": "གནས་ཚུལ།",

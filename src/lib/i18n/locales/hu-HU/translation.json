@@ -1465,7 +1465,6 @@
 	"Include": "Tartalmaz",
 	"Include saved memories in the system context.": "A mentett emlékek beillesztése a rendszerkontextusba.",
 	"Include voices that are not provided by a local speech service.": "A nem helyi beszédszolgáltatás által biztosított hangok megjelenítése.",
-	"Increase contrast for controls and input surfaces.": "",
 	"Increase UI Scale": "Felület méretezésének növelése",
 	"Influences how quickly the algorithm responds to feedback from the generated text. A lower learning rate will result in slower adjustments, while a higher learning rate will make the algorithm more responsive.": "Befolyásolja, hogy az algoritmus milyen gyorsan reagál a generált szöveg visszajelzéseire. Az alacsonyabb tanulási ráta lassabb alkalmazkodást eredményez, míg a magasabb tanulási ráta gyorsabb reagálást tesz lehetővé.",
 	"Info": "Információ",

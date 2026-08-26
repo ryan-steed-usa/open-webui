@@ -1455,7 +1455,6 @@
 	"Include": "包含",
 	"Include saved memories in the system context.": "",
 	"Include voices that are not provided by a local speech service.": "",
-	"Increase contrast for controls and input surfaces.": "",
 	"Increase UI Scale": "增加介面縮放比例",
 	"Influences how quickly the algorithm responds to feedback from the generated text. A lower learning rate will result in slower adjustments, while a higher learning rate will make the algorithm more responsive.": "影響演算法對產生的文字回饋的反應速度。較低的學習率會導致調整速度較慢，而較高的學習率會使演算法反應更靈敏。",
 	"Info": "資訊",

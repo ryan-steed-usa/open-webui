@@ -1465,7 +1465,6 @@
 	"Include": "அடங்கும்",
 	"Include saved memories in the system context.": "",
 	"Include voices that are not provided by a local speech service.": "",
-	"Increase contrast for controls and input surfaces.": "",
 	"Increase UI Scale": "UI அளவை அதிகரிக்கவும்",
 	"Influences how quickly the algorithm responds to feedback from the generated text. A lower learning rate will result in slower adjustments, while a higher learning rate will make the algorithm more responsive.": "உருவாக்கப்பட்ட உரையிலிருந்து வரும் கருத்துகளுக்கு அல்காரிதம் எவ்வளவு விரைவாக பதிலளிக்கிறது என்பதைப் பாதிக்கிறது. குறைந்த கற்றல் விகிதம் மெதுவான மாற்றங்களை ஏற்படுத்தும், அதே நேரத்தில் அதிக கற்றல் விகிதம் அல்காரிதத்தை மிகவும் பதிலளிக்கக்கூடியதாக மாற்றும்.",
 	"Info": "தகவல்",
