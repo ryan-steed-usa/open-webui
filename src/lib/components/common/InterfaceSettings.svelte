@@ -1438,6 +1438,9 @@
 				/>
 			</div>
 		</div>
+		<p class={settingDescriptionClass}>
+			{$i18n.t('Convert conversation generation statistics into a human-friendly format.')}
+		</p>
 	</div>
 
 	<div class={sectionHeadingClass}>{$i18n.t('Input')}</div>
