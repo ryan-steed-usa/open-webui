@@ -1,24 +1,14 @@
 <script lang="ts">
-	import { config, models, settings, user } from '$lib/stores';
-	import { createEventDispatcher, onMount, onDestroy, getContext } from 'svelte';
-	import { toast } from 'svelte-sonner';
-	import Tooltip from '$lib/components/common/Tooltip.svelte';
-	import { updateUserInfo } from '$lib/apis/users';
-	import { getUserPosition } from '$lib/utils';
-	import { setTextScale } from '$lib/utils/text-scale';
-
-	import Minus from '$lib/components/icons/Minus.svelte';
-	import Plus from '$lib/components/icons/Plus.svelte';
-	import Switch from '$lib/components/common/Switch.svelte';
-	import ManageFloatingActionButtonsModal from './Interface/ManageFloatingActionButtonsModal.svelte';
-	import ManageImageCompressionModal from './Interface/ManageImageCompressionModal.svelte';
+	import { createEventDispatcher, getContext } from 'svelte';
+	import InterfaceSettings from '$lib/components/common/InterfaceSettings.svelte';
 
 	const dispatch = createEventDispatcher();
-
-	const i18n = getContext('i18n');
+	const i18n: any = getContext('i18n');
 
 	export let saveSettings: Function;
+	export let personalSettingsValue: Record<string, any> = {};
 
+<<<<<<< HEAD
 	let backgroundImageUrl = null;
 	let inputFiles = null;
 	let filesInputElement;
@@ -293,64 +283,23 @@
 
 		defaultUploadContext = $settings?.defaultUploadContext ?? 'focused';
 	});
+=======
+	let interfaceSettings: any;
+>>>>>>> upstream/main
 </script>
-
-<ManageFloatingActionButtonsModal
-	bind:show={showManageFloatingActionButtonsModal}
-	{floatingActionButtons}
-	onSave={(buttons) => {
-		floatingActionButtons = buttons;
-		saveSettings({ floatingActionButtons });
-	}}
-/>
-
-<ManageImageCompressionModal
-	bind:show={showManageImageCompressionModal}
-	size={imageCompressionSize}
-	onSave={(size) => {
-		saveSettings({ imageCompressionSize: size });
-	}}
-/>
 
 <form
 	id="tab-interface"
 	class="flex flex-col h-full justify-between text-sm"
-	on:submit|preventDefault={() => {
-		updateInterfaceHandler();
+	on:submit|preventDefault={async () => {
+		await interfaceSettings?.save();
 		dispatch('save');
 	}}
 >
 	<h2 class="text-sm font-medium text-gray-900 dark:text-white mb-4">{$i18n.t('Interface')}</h2>
 
-	<input
-		bind:this={filesInputElement}
-		bind:files={inputFiles}
-		type="file"
-		hidden
-		accept="image/*"
-		on:change={() => {
-			let reader = new FileReader();
-			reader.onload = (event) => {
-				let originalImageUrl = `${event.target.result}`;
-
-				backgroundImageUrl = originalImageUrl;
-				saveSettings({ backgroundImageUrl });
-			};
-
-			if (
-				inputFiles &&
-				inputFiles.length > 0 &&
-				['image/gif', 'image/webp', 'image/jpeg', 'image/png'].includes(inputFiles[0]['type'])
-			) {
-				reader.readAsDataURL(inputFiles[0]);
-			} else {
-				console.log(`Unsupported File Type '${inputFiles[0]['type']}'.`);
-				inputFiles = null;
-			}
-		}}
-	/>
-
 	<div class="flex-1 min-h-0 overflow-y-auto scrollbar-hover pr-1.5">
+<<<<<<< HEAD
 		<div class="flex flex-col gap-2.5">
 			<h3 class={firstSectionHeadingClass}>{$i18n.t('UI')}</h3>
 
@@ -1629,6 +1578,9 @@
 				</div>
 			{/if}
 		</div>
+=======
+		<InterfaceSettings bind:this={interfaceSettings} {saveSettings} {personalSettingsValue} />
+>>>>>>> upstream/main
 	</div>
 
 	<div class="shrink-0 flex justify-end text-sm font-normal">
