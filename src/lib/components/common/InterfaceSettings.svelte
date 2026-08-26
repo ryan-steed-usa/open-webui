@@ -1435,7 +1435,8 @@
 					on:change={() => {
 						saveSettings({ showFriendlyGenerationStats });
 					}}
-			/>
+				/>
+			</div>
 		</div>
 	</div>
 
