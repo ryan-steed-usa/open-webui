@@ -2967,6 +2967,8 @@
 	"settings.personal.interface.showFilesOnTerminalSelect.label": "选择终端时显示文件",
 	"settings.personal.interface.showFormattingToolbar.description": "在富文本编辑器中显示格式化控件。",
 	"settings.personal.interface.showFormattingToolbar.label": "显示文本格式工具栏",
+	"settings.personal.interface.showFriendlyGenerationStats.description": "",
+	"settings.personal.interface.showFriendlyGenerationStats.label": "",
 	"settings.personal.interface.stylizedPdfExport.description": "将对话导出为 PDF 时使用样式化格式。",
 	"settings.personal.interface.stylizedPdfExport.label": "美化 PDF 导出",
 	"settings.personal.interface.temporaryChatByDefault.description": "默认创建临时对话，除非更改设置。",

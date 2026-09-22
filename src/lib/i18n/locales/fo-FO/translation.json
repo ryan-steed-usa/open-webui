@@ -2970,6 +2970,8 @@
 	"settings.personal.interface.showFilesOnTerminalSelect.label": "Vís fílur, tá terminalur verður valdur",
 	"settings.personal.interface.showFormattingToolbar.description": "Vís formateringsstýringar í ríka tekstskrivaranum.",
 	"settings.personal.interface.showFormattingToolbar.label": "Vís formateringsamboðsbjálka",
+	"settings.personal.interface.showFriendlyGenerationStats.description": "",
+	"settings.personal.interface.showFriendlyGenerationStats.label": "",
 	"settings.personal.interface.stylizedPdfExport.description": "Nýt stílsniðna formatering, tá kjatt verða flutt út sum PDF.",
 	"settings.personal.interface.stylizedPdfExport.label": "Stílsniðin PDF-útflutningur",
 	"settings.personal.interface.temporaryChatByDefault.description": "Byrja nýggj kjatt sum fyribils, um tað ikki verður broytt.",

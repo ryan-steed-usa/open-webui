@@ -2986,6 +2986,8 @@
 	"settings.personal.interface.showFilesOnTerminalSelect.label": "Mostrar los Archivos al Seleccionar un Terminal",
 	"settings.personal.interface.showFormattingToolbar.description": "Muestra los controles de formato en el redactor de texto enriquecido.",
 	"settings.personal.interface.showFormattingToolbar.label": "Mostrar barra de herramientas de Formateo",
+	"settings.personal.interface.showFriendlyGenerationStats.description": "",
+	"settings.personal.interface.showFriendlyGenerationStats.label": "",
 	"settings.personal.interface.stylizedPdfExport.description": "Usa formato con estilos al exportar los chats a PDF.",
 	"settings.personal.interface.stylizedPdfExport.label": "Exportar PDF Estilizado",
 	"settings.personal.interface.temporaryChatByDefault.description": "Inicia los chats nuevos como temporales salvo que se cambie.",

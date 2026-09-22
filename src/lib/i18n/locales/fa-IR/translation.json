@@ -2970,6 +2970,8 @@
 	"settings.personal.interface.showFilesOnTerminalSelect.label": "",
 	"settings.personal.interface.showFormattingToolbar.description": "",
 	"settings.personal.interface.showFormattingToolbar.label": "نمایش نوار ابزار قالب\u200cبندی",
+	"settings.personal.interface.showFriendlyGenerationStats.description": "",
+	"settings.personal.interface.showFriendlyGenerationStats.label": "",
 	"settings.personal.interface.stylizedPdfExport.description": "",
 	"settings.personal.interface.stylizedPdfExport.label": "خروجی گرفتن از PDF با استایل",
 	"settings.personal.interface.temporaryChatByDefault.description": "",

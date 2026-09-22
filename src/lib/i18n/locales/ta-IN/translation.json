@@ -2970,6 +2970,8 @@
 	"settings.personal.interface.showFilesOnTerminalSelect.label": "",
 	"settings.personal.interface.showFormattingToolbar.description": "",
 	"settings.personal.interface.showFormattingToolbar.label": "வடிவமைத்தல் கருவிப்பட்டியைக் காட்டு",
+	"settings.personal.interface.showFriendlyGenerationStats.description": "",
+	"settings.personal.interface.showFriendlyGenerationStats.label": "",
 	"settings.personal.interface.stylizedPdfExport.description": "",
 	"settings.personal.interface.stylizedPdfExport.label": "பகட்டான PDF ஏற்றுமதி",
 	"settings.personal.interface.temporaryChatByDefault.description": "",

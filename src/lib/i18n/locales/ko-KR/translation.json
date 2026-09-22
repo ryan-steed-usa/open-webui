@@ -2956,6 +2956,8 @@
 	"settings.personal.interface.showFilesOnTerminalSelect.label": "터미널 선택 시 파일 표시",
 	"settings.personal.interface.showFormattingToolbar.description": "서식 있는 텍스트 입력기에 서식 도구를 표시합니다.",
 	"settings.personal.interface.showFormattingToolbar.label": "서식 툴바 표시",
+	"settings.personal.interface.showFriendlyGenerationStats.description": "",
+	"settings.personal.interface.showFriendlyGenerationStats.label": "",
 	"settings.personal.interface.stylizedPdfExport.description": "채팅을 PDF로 내보낼 때 서식이 적용된 형식을 사용합니다.",
 	"settings.personal.interface.stylizedPdfExport.label": "서식이 적용된 PDF 내보내기",
 	"settings.personal.interface.temporaryChatByDefault.description": "별도로 변경하지 않는 한 새 채팅을 임시 채팅으로 시작합니다.",

@@ -3002,6 +3002,8 @@
 	"settings.personal.interface.showFilesOnTerminalSelect.label": "Prikaži datoteke on terminal Select",
 	"settings.personal.interface.showFormattingToolbar.description": "Prikaži kontrole oblikovanja v sestavljalniku bogatega besedila.",
 	"settings.personal.interface.showFormattingToolbar.label": "Prikaži Formatting Toolbar",
+	"settings.personal.interface.showFriendlyGenerationStats.description": "",
+	"settings.personal.interface.showFriendlyGenerationStats.label": "",
 	"settings.personal.interface.stylizedPdfExport.description": "Uporabi oblikovano oblikovanje pri izvozu pogovorov v PDF.",
 	"settings.personal.interface.stylizedPdfExport.label": "Stylized PDF Export",
 	"settings.personal.interface.temporaryChatByDefault.description": "Začni nove pogovore kot začasne, razen če se spremeni.",

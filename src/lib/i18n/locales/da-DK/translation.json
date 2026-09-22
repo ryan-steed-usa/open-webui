@@ -2970,6 +2970,8 @@
 	"settings.personal.interface.showFilesOnTerminalSelect.label": "Vis filer ved valg af terminal",
 	"settings.personal.interface.showFormattingToolbar.description": "Vis formateringsværktøjer i editoren til formateret tekst.",
 	"settings.personal.interface.showFormattingToolbar.label": "Vis formateringsværktøjslinjen",
+	"settings.personal.interface.showFriendlyGenerationStats.description": "",
+	"settings.personal.interface.showFriendlyGenerationStats.label": "",
 	"settings.personal.interface.stylizedPdfExport.description": "Brug formatering med typografier ved eksport af chats til PDF.",
 	"settings.personal.interface.stylizedPdfExport.label": "Stiliseret PDF eksport",
 	"settings.personal.interface.temporaryChatByDefault.description": "Start nye chats som midlertidige, medmindre det ændres.",

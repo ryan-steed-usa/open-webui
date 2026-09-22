@@ -2970,6 +2970,8 @@
 	"settings.personal.interface.showFilesOnTerminalSelect.label": "Bestanden tonen bij terminalselectie",
 	"settings.personal.interface.showFormattingToolbar.description": "Toon opmaakknoppen in de editor voor opgemaakte tekst.",
 	"settings.personal.interface.showFormattingToolbar.label": "Opmaakwerkbalk tonen",
+	"settings.personal.interface.showFriendlyGenerationStats.description": "",
+	"settings.personal.interface.showFriendlyGenerationStats.label": "",
 	"settings.personal.interface.stylizedPdfExport.description": "Gebruik opmaak bij het exporteren van chats naar PDF.",
 	"settings.personal.interface.stylizedPdfExport.label": "Gestileerde PDF-export",
 	"settings.personal.interface.temporaryChatByDefault.description": "Start nieuwe chats standaard als tijdelijke chat.",

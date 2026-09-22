@@ -2970,6 +2970,8 @@
 	"settings.personal.interface.showFilesOnTerminalSelect.label": "Fájlok megjelenítése terminál kiválasztásakor",
 	"settings.personal.interface.showFormattingToolbar.description": "Formázási vezérlők megjelenítése a formázott szövegszerkesztőben.",
 	"settings.personal.interface.showFormattingToolbar.label": "Formázási eszköztár megjelenítése",
+	"settings.personal.interface.showFriendlyGenerationStats.description": "",
+	"settings.personal.interface.showFriendlyGenerationStats.label": "",
 	"settings.personal.interface.stylizedPdfExport.description": "Stilizált formázás használata a beszélgetések PDF-be exportálásakor.",
 	"settings.personal.interface.stylizedPdfExport.label": "Stilizált PDF-exportálás",
 	"settings.personal.interface.temporaryChatByDefault.description": "Az új beszélgetések alapértelmezés szerint ideiglenesként induljanak.",

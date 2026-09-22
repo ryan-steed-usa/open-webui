@@ -2954,6 +2954,8 @@
 	"settings.personal.interface.showFilesOnTerminalSelect.label": "",
 	"settings.personal.interface.showFormattingToolbar.description": "",
 	"settings.personal.interface.showFormattingToolbar.label": "Paparkan Bar Alatan Format",
+	"settings.personal.interface.showFriendlyGenerationStats.description": "",
+	"settings.personal.interface.showFriendlyGenerationStats.label": "",
 	"settings.personal.interface.stylizedPdfExport.description": "",
 	"settings.personal.interface.stylizedPdfExport.label": "Eksport PDF Bergaya",
 	"settings.personal.interface.temporaryChatByDefault.description": "",

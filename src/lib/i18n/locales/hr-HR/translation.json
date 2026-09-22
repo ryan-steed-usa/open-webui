@@ -2986,6 +2986,8 @@
 	"settings.personal.interface.showFilesOnTerminalSelect.label": "Prikaži datoteke pri odabiru terminala",
 	"settings.personal.interface.showFormattingToolbar.description": "Prikaži kontrole oblikovanja u uređivaču obogaćenog teksta.",
 	"settings.personal.interface.showFormattingToolbar.label": "Prikaži alatnu traku za oblikovanje",
+	"settings.personal.interface.showFriendlyGenerationStats.description": "",
+	"settings.personal.interface.showFriendlyGenerationStats.label": "",
 	"settings.personal.interface.stylizedPdfExport.description": "Koristi stilizirano oblikovanje pri izvozu razgovora u PDF.",
 	"settings.personal.interface.stylizedPdfExport.label": "Stilizirani izvoz u PDF",
 	"settings.personal.interface.temporaryChatByDefault.description": "Započni nove razgovore kao privremene osim ako se to promijeni.",

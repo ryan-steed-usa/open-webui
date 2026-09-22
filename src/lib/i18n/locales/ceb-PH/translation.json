@@ -2970,6 +2970,8 @@
 	"settings.personal.interface.showFilesOnTerminalSelect.label": "Ipakita ang mga file sa pagpili og terminal",
 	"settings.personal.interface.showFormattingToolbar.description": "Ipakita ang mga kontrol sa pagpormat sa sulatanan sa pormatadong teksto.",
 	"settings.personal.interface.showFormattingToolbar.label": "Ipakita ang toolbar sa pagpormat",
+	"settings.personal.interface.showFriendlyGenerationStats.description": "",
+	"settings.personal.interface.showFriendlyGenerationStats.label": "",
 	"settings.personal.interface.stylizedPdfExport.description": "Gamita ang estilong pagpormat sa pag-export sa mga panaghisgot ngadto sa PDF.",
 	"settings.personal.interface.stylizedPdfExport.label": "Estilong pag-export sa PDF",
 	"settings.personal.interface.temporaryChatByDefault.description": "Himoang temporaryo ang bag-ong mga panaghisgot gawas kon usbon.",

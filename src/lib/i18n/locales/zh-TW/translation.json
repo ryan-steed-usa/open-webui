@@ -2954,6 +2954,8 @@
 	"settings.personal.interface.showFilesOnTerminalSelect.label": "選取終端機時顯示檔案",
 	"settings.personal.interface.showFormattingToolbar.description": "在富文字編輯輸入框中顯示格式化控制項。",
 	"settings.personal.interface.showFormattingToolbar.label": "顯示文字格式工具列",
+	"settings.personal.interface.showFriendlyGenerationStats.description": "",
+	"settings.personal.interface.showFriendlyGenerationStats.label": "",
 	"settings.personal.interface.stylizedPdfExport.description": "將對話匯出為 PDF 時套用樣式格式化。",
 	"settings.personal.interface.stylizedPdfExport.label": "風格化 PDF 匯出",
 	"settings.personal.interface.temporaryChatByDefault.description": "除非另作變更，否則新對話預設為暫時對話。",

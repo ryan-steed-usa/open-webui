@@ -2970,6 +2970,8 @@
 	"settings.personal.interface.showFilesOnTerminalSelect.label": "Показване на файловете при избор на терминал",
 	"settings.personal.interface.showFormattingToolbar.description": "Показване на контролите за форматиране в редактора за форматиран текст.",
 	"settings.personal.interface.showFormattingToolbar.label": "Показване на лентата за форматиране",
+	"settings.personal.interface.showFriendlyGenerationStats.description": "",
+	"settings.personal.interface.showFriendlyGenerationStats.label": "",
 	"settings.personal.interface.stylizedPdfExport.description": "Използване на стилизирано форматиране при експортиране на чатове в PDF.",
 	"settings.personal.interface.stylizedPdfExport.label": "Експортиране на стилизиран PDF",
 	"settings.personal.interface.temporaryChatByDefault.description": "Новите чатове да са временни, освен ако не бъде променено.",

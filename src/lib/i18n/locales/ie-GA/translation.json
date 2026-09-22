@@ -2970,6 +2970,8 @@
 	"settings.personal.interface.showFilesOnTerminalSelect.label": "Taispeáin Comhaid ar Teirminéal Roghnaigh",
 	"settings.personal.interface.showFormattingToolbar.description": "Taispeáin rialuithe formáidithe sa chumadóir téacs saibhir.",
 	"settings.personal.interface.showFormattingToolbar.label": "Taispeáin Barra Uirlisí Formáidithe",
+	"settings.personal.interface.showFriendlyGenerationStats.description": "",
+	"settings.personal.interface.showFriendlyGenerationStats.label": "",
 	"settings.personal.interface.stylizedPdfExport.description": "Bain úsáid as formáidiú stíleáilte agus comhráite á n-easpórtáil go PDF.",
 	"settings.personal.interface.stylizedPdfExport.label": "Easpórtáil PDF Stílithe",
 	"settings.personal.interface.temporaryChatByDefault.description": "Tosaigh comhráite nua mar chomhráite sealadacha mura n-athraítear iad.",

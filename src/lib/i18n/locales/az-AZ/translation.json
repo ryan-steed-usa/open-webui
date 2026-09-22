@@ -2970,6 +2970,8 @@
 	"settings.personal.interface.showFilesOnTerminalSelect.label": "Terminal seçildikdə faylları göstər",
 	"settings.personal.interface.showFormattingToolbar.description": "Zəngin mətn redaktorunda formatlama alətlərini göstərin.",
 	"settings.personal.interface.showFormattingToolbar.label": "Formatlama alətlər panelini göstər",
+	"settings.personal.interface.showFriendlyGenerationStats.description": "",
+	"settings.personal.interface.showFriendlyGenerationStats.label": "",
 	"settings.personal.interface.stylizedPdfExport.description": "Çatları PDF-ə ixrac edərkən üslublu formatlamadan istifadə edin.",
 	"settings.personal.interface.stylizedPdfExport.label": "Stil verilmiş PDF ixracı",
 	"settings.personal.interface.temporaryChatByDefault.description": "Dəyişdirilmədikcə yeni çatları müvəqqəti olaraq başladın.",

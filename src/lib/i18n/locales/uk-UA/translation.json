@@ -3002,6 +3002,8 @@
 	"settings.personal.interface.showFilesOnTerminalSelect.label": "Показувати файли під час вибору термінала",
 	"settings.personal.interface.showFormattingToolbar.description": "Показувати елементи форматування в редакторі форматованого тексту.",
 	"settings.personal.interface.showFormattingToolbar.label": "Показувати панель форматування",
+	"settings.personal.interface.showFriendlyGenerationStats.description": "",
+	"settings.personal.interface.showFriendlyGenerationStats.label": "",
 	"settings.personal.interface.stylizedPdfExport.description": "Використовувати стилізоване форматування під час експорту чатів у PDF.",
 	"settings.personal.interface.stylizedPdfExport.label": "Стилізований експорт PDF",
 	"settings.personal.interface.temporaryChatByDefault.description": "Починати нові чати як тимчасові, доки не змінено.",

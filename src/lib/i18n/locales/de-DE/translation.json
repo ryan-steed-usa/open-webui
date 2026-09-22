@@ -2970,6 +2970,8 @@
 	"settings.personal.interface.showFilesOnTerminalSelect.label": "Dateien bei Terminal-Auswahl anzeigen",
 	"settings.personal.interface.showFormattingToolbar.description": "Zeigt die Formatierungsleiste im Rich-Text-Eingabefeld an.",
 	"settings.personal.interface.showFormattingToolbar.label": "Formatierungsleiste anzeigen",
+	"settings.personal.interface.showFriendlyGenerationStats.description": "",
+	"settings.personal.interface.showFriendlyGenerationStats.label": "",
 	"settings.personal.interface.stylizedPdfExport.description": "Übernimmt beim PDF-Export von Chats die Formatierung.",
 	"settings.personal.interface.stylizedPdfExport.label": "Stilisierter PDF-Export",
 	"settings.personal.interface.temporaryChatByDefault.description": "Startet neue Chats als temporär, sofern nicht anders gewählt.",

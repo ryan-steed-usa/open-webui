@@ -2986,6 +2986,8 @@
 	"settings.personal.interface.showFilesOnTerminalSelect.label": "",
 	"settings.personal.interface.showFormattingToolbar.description": "",
 	"settings.personal.interface.showFormattingToolbar.label": "Mostrar Barra de Formatação",
+	"settings.personal.interface.showFriendlyGenerationStats.description": "",
+	"settings.personal.interface.showFriendlyGenerationStats.label": "",
 	"settings.personal.interface.stylizedPdfExport.description": "",
 	"settings.personal.interface.stylizedPdfExport.label": "Exportação de PDF Estilizado",
 	"settings.personal.interface.temporaryChatByDefault.description": "",

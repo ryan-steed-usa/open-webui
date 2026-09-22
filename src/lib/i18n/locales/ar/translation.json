@@ -3034,6 +3034,8 @@
 	"settings.personal.interface.showFilesOnTerminalSelect.label": "عرض الملفات عند اختيار الطرفية",
 	"settings.personal.interface.showFormattingToolbar.description": "عرض أدوات التنسيق في محرر النص المنسق.",
 	"settings.personal.interface.showFormattingToolbar.label": "عرض شريط أدوات التنسيق",
+	"settings.personal.interface.showFriendlyGenerationStats.description": "",
+	"settings.personal.interface.showFriendlyGenerationStats.label": "",
 	"settings.personal.interface.stylizedPdfExport.description": "استخدام تنسيق منمّق عند تصدير المحادثات إلى PDF.",
 	"settings.personal.interface.stylizedPdfExport.label": "تصدير PDF بتنسيق محسّن",
 	"settings.personal.interface.temporaryChatByDefault.description": "بدء المحادثات الجديدة كمحادثات مؤقتة ما لم يتم تغيير ذلك.",

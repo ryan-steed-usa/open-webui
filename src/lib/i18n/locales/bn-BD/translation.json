@@ -2970,6 +2970,8 @@
 	"settings.personal.interface.showFilesOnTerminalSelect.label": "টার্মিনাল নির্বাচন করলে ফাইল দেখান",
 	"settings.personal.interface.showFormattingToolbar.description": "রিচ টেক্সট লেখার ঘরে ফরম্যাটের নিয়ন্ত্রণ দেখান।",
 	"settings.personal.interface.showFormattingToolbar.label": "ফরম্যাটিং টুলবার দেখান",
+	"settings.personal.interface.showFriendlyGenerationStats.description": "",
+	"settings.personal.interface.showFriendlyGenerationStats.label": "",
 	"settings.personal.interface.stylizedPdfExport.description": "চ্যাট PDF-এ এক্সপোর্ট করার সময় সাজানো ফরম্যাট ব্যবহার করুন।",
 	"settings.personal.interface.stylizedPdfExport.label": "সাজানো PDF এক্সপোর্ট",
 	"settings.personal.interface.temporaryChatByDefault.description": "পরিবর্তন না করলে নতুন চ্যাট অস্থায়ী হিসেবে শুরু করুন।",

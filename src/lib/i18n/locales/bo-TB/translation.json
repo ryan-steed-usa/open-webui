@@ -2954,6 +2954,8 @@
 	"settings.personal.interface.showFilesOnTerminalSelect.label": "མཐའ་སྣེ་གདམ་སྐབས་ཡིག་ཆ་སྟོན་པ།",
 	"settings.personal.interface.showFormattingToolbar.description": "ཡིག་རྐྱང་ཕུན་ཚོགས་འབྲི་སར་རྣམ་གཞག་ཚོད་འཛིན་སྟོན་པ།",
 	"settings.personal.interface.showFormattingToolbar.label": "རྣམ་གཞག་ལག་ཆའི་སྡེར་སྟོན་པ།",
+	"settings.personal.interface.showFriendlyGenerationStats.description": "",
+	"settings.personal.interface.showFriendlyGenerationStats.label": "",
 	"settings.personal.interface.stylizedPdfExport.description": "ཁ་བརྡ་ PDF ལ་ཕྱིར་འདྲེན་བྱེད་སྐབས་ཉམས་བཀོད་རྣམ་གཞག་སྤྱོད་པ།",
 	"settings.personal.interface.stylizedPdfExport.label": "རྣམ་བཟོ་བྱས་པའི་ PDF ཕྱིར་འདྲེན།",
 	"settings.personal.interface.temporaryChatByDefault.description": "སྒྱུར་བཅོས་མ་བྱས་ན་ཁ་བརྡ་གསར་པ་གནས་སྐབས་ཀྱི་ཁ་བརྡར་འགོ་འཛུགས་པ།",

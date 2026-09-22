@@ -3002,6 +3002,8 @@
 	"settings.personal.interface.showFilesOnTerminalSelect.label": "Pokaż pliki po wybraniu terminala",
 	"settings.personal.interface.showFormattingToolbar.description": "Pokazuj elementy formatowania w edytorze tekstu sformatowanego.",
 	"settings.personal.interface.showFormattingToolbar.label": "Pokaż pasek formatowania",
+	"settings.personal.interface.showFriendlyGenerationStats.description": "",
+	"settings.personal.interface.showFriendlyGenerationStats.label": "",
 	"settings.personal.interface.stylizedPdfExport.description": "Stosuj formatowanie ze stylami przy eksporcie czatów do PDF.",
 	"settings.personal.interface.stylizedPdfExport.label": "Stylizowany eksport PDF",
 	"settings.personal.interface.temporaryChatByDefault.description": "Rozpoczynaj nowe czaty jako tymczasowe, dopóki nie zmienisz tego ustawienia.",

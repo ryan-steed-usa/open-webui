@@ -3002,6 +3002,8 @@
 	"settings.personal.interface.showFilesOnTerminalSelect.label": "Zobrazit soubory při výběru terminálu",
 	"settings.personal.interface.showFormattingToolbar.description": "V editoru formátovaného textu zobrazovat ovládací prvky formátování.",
 	"settings.personal.interface.showFormattingToolbar.label": "Zobrazit panel nástrojů pro formátování",
+	"settings.personal.interface.showFriendlyGenerationStats.description": "",
+	"settings.personal.interface.showFriendlyGenerationStats.label": "",
 	"settings.personal.interface.stylizedPdfExport.description": "Při exportu konverzací do PDF použít stylované formátování.",
 	"settings.personal.interface.stylizedPdfExport.label": "Stylizovaný export do PDF",
 	"settings.personal.interface.temporaryChatByDefault.description": "Zahajovat nové konverzace jako dočasné, pokud toto nastavení nezměníte.",

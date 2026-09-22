@@ -2970,6 +2970,8 @@
 	"settings.personal.interface.showFilesOnTerminalSelect.label": "Terminal Seçildiğinde Dosyaları Göster",
 	"settings.personal.interface.showFormattingToolbar.description": "Zengin metin oluşturucusunda biçimlendirme kontrollerini göster.",
 	"settings.personal.interface.showFormattingToolbar.label": "Biçimlendirme Araç Çubuğunu Göster",
+	"settings.personal.interface.showFriendlyGenerationStats.description": "",
+	"settings.personal.interface.showFriendlyGenerationStats.label": "",
 	"settings.personal.interface.stylizedPdfExport.description": "Sohbetleri PDF'e dışa aktarırken biçimlendirilmiş stil kullanın.",
 	"settings.personal.interface.stylizedPdfExport.label": "Biçimlendirilmiş PDF Dışa Aktarımı",
 	"settings.personal.interface.temporaryChatByDefault.description": "Değiştirilmediği sürece yeni sohbetleri geçici olarak başlat.",

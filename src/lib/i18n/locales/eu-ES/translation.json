@@ -2970,6 +2970,8 @@
 	"settings.personal.interface.showFilesOnTerminalSelect.label": "Erakutsi fitxategiak terminala hautatzean",
 	"settings.personal.interface.showFormattingToolbar.description": "Erakutsi formatu-kontrolak testu aberastuaren editorean.",
 	"settings.personal.interface.showFormattingToolbar.label": "Erakutsi formatuaren tresna-barra",
+	"settings.personal.interface.showFriendlyGenerationStats.description": "",
+	"settings.personal.interface.showFriendlyGenerationStats.label": "",
 	"settings.personal.interface.stylizedPdfExport.description": "Erabili estilodun formatua txatak PDFra esportatzean.",
 	"settings.personal.interface.stylizedPdfExport.label": "Estilodun PDF esportazioa",
 	"settings.personal.interface.temporaryChatByDefault.description": "Hasi txat berriak aldi baterako moduan, bestelakorik ezarri ezean.",

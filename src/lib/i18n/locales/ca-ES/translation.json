@@ -2986,6 +2986,8 @@
 	"settings.personal.interface.showFilesOnTerminalSelect.label": "Mostra fitxers en seleccionar terminal",
 	"settings.personal.interface.showFormattingToolbar.description": "Mostrar els controls de format a l'editor de text enriquit.",
 	"settings.personal.interface.showFormattingToolbar.label": "Mostrar la barra de format",
+	"settings.personal.interface.showFriendlyGenerationStats.description": "",
+	"settings.personal.interface.showFriendlyGenerationStats.label": "",
 	"settings.personal.interface.stylizedPdfExport.description": "Utilitzar el format d'estil quan exportis xats a PDF.",
 	"settings.personal.interface.stylizedPdfExport.label": "Exportació en PDF estilitzat",
 	"settings.personal.interface.temporaryChatByDefault.description": "Iniciar xats nous com a temporals tret que es modifiqui.",

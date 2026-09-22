@@ -2954,6 +2954,8 @@
 	"settings.personal.interface.showFilesOnTerminalSelect.label": "ターミナル選択時にファイルを表示",
 	"settings.personal.interface.showFormattingToolbar.description": "リッチテキストの入力欄に書式設定コントロールを表示します。",
 	"settings.personal.interface.showFormattingToolbar.label": "フォーマットツールバーを表示",
+	"settings.personal.interface.showFriendlyGenerationStats.description": "",
+	"settings.personal.interface.showFriendlyGenerationStats.label": "",
 	"settings.personal.interface.stylizedPdfExport.description": "チャットをPDFにエクスポートするときに書式を適用します。",
 	"settings.personal.interface.stylizedPdfExport.label": "スタイル付きPDFエクスポート",
 	"settings.personal.interface.temporaryChatByDefault.description": "変更しない限り、新しいチャットを一時的なチャットとして開始します。",

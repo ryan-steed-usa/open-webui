@@ -2970,6 +2970,8 @@
 	"settings.personal.interface.showFilesOnTerminalSelect.label": "Avaa terminaali tiedostoselain",
 	"settings.personal.interface.showFormattingToolbar.description": "Näytä tekstin muotoilutyökalut kentässä.",
 	"settings.personal.interface.showFormattingToolbar.label": "Näytä muotoilupalkki",
+	"settings.personal.interface.showFriendlyGenerationStats.description": "",
+	"settings.personal.interface.showFriendlyGenerationStats.label": "",
 	"settings.personal.interface.stylizedPdfExport.description": "Käytä tyyliteltyä muotoilua viedessä keskusteluja PDF:ään.",
 	"settings.personal.interface.stylizedPdfExport.label": "Muotoiltun PDF-vienti",
 	"settings.personal.interface.temporaryChatByDefault.description": "Aloita uudet keskustelut väliaikaisina, ellei niitä muuteta.",
