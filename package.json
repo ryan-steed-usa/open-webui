@@ -1,6 +1,6 @@
 {
 	"name": "open-webui",
-	"version": "0.13.4-rsu1",
+	"version": "0.13.5-rsu1",
 	"private": true,
 	"scripts": {
 		"crypto:verify": "node scripts/encryption/artifact.mjs",
